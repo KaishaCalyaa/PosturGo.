@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Partner - PosturGo</title>
+  <meta name="description" content="Halaman kemitraan Green Partner – kolaborasi untuk lingkungan kerja yang berkelanjutan.">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Page-specific enhancements */
+    .sub-hero {
+      background: linear-gradient(180deg, #f0f4f8, var(--bg-light));
+      padding: 7rem 0 3rem;
+    }
+    .sub-hero h1 { font-size: 2.25rem; }
+    .sub-hero p { color: var(--gray-400); margin-top: .5rem; }
+
+    .about-green { background: var(--bg-light); }
+    .about-green .container { display: flex; gap: 3rem; align-items: center; }
+    .about-green .about-text { flex: 1; }
+    .about-green .about-image { flex: 1; max-width: 420px; margin-left: auto; }
+
+    .pill-row { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1rem; }
+    .pill { background: var(--gray-100); border: 1px solid var(--gray-200); color: var(--text-dark); padding: .4rem .75rem; border-radius: 999px; font-size: .85rem; font-weight: 600; }
+
+    .team-like { background: var(--gray-100); }
+    .team-like .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .team-like .card { background: var(--bg-light); border-radius: 12px; box-shadow: var(--shadow-md); padding: 1.5rem; text-align: center; transition: transform .3s ease, box-shadow .3s ease; }
+    .team-like .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .team-like .avatar { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; box-shadow: var(--shadow-sm); }
+    .team-like h4 { margin-top: .25rem; }
+    .role { color: var(--secondary-color); font-weight: 600; font-size: .95rem; }
+    .muted { color: var(--gray-400); font-size: .95rem; margin: .75rem 0 1rem; }
+
+    
+
+    .page-breadcrumb { font-size: .9rem; color: var(--gray-400); margin-top: .5rem; }
+  </style>
+</head>
+<body>
+  <div class="preloader"><div class="loader"></div></div>
+  <a href="#top" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html#home" class="logo">
+          <img src="ASSET/LogoPG.png" alt="PosturGo Logo"> PosturGo
+        </a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html#home" class="nav-link">Beranda</a></li>
+          <li><a href="index.html#about" class="nav-link">Tentang</a></li>
+          <li><a href="index.html#features" class="nav-link">Fitur</a></li>
+          <li><a href="index.html#solutions" class="nav-link">Solusi</a></li>
+          <li><a href="index.html#team" class="nav-link">Tim</a></li>
+          <li><a href="index.html#contact" class="nav-link btn btn-primary">Kontak Kami</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+
+  <section class="section about-green">
+    <div class="container">
+      <div class="about-text">
+        <span class="section-subtitle">Tentang SMK N 2 Surakarta</span>
+        <h2 class="section-title">SMK N 2 Surakarta</h2>
+        <div class="section-divider" style="margin-left: 0; margin-right: 0;"></div>
+        <p>
+          SMK Negeri 2 Surakarta adalah salah satu sekolah menengah kejuruan terbaik di Solo yang memiliki
+          komitmen tinggi terhadap pengembangan teknologi dan inovasi. Sekolah ini telah menghasilkan lulusan-lulusan
+          berkualitas yang siap bersaing di dunia industri.
+        </p>
+        <p>
+          Dalam proyek POSTURGO, SMK N 2 Surakarta berperan sebagai mitra strategis yang menyediakan sumber daya
+          manusia berkualitas untuk pengembangan solusi pemantauan postur kerja berbasis AI dan ergonomi.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Pengembangan Perangkat Lunak & Gim</span>
+          <span class="pill">Teknik Komputer & Jaringan</span>
+          <span class="pill">Teknik Elektronika Industri</span>
+          <span class="pill">Teknik Mesin</span>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="images/smkn2.png" alt="Logo SMK N 2 Surakarta" style="border-radius: 12px; box-shadow: var(--shadow-lg);">
+      </div>
+    </div>
+  </section>
+
+  <section class="section team-like">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tim Pengembang POSTURGO</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">Siswa-siswa yang terlibat dalam pengembangan proyek POSTURGO</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img class="avatar" src="https://randomuser.me/api/portraits/men/15.jpg" alt="Avatar">
+          <h4>Raka Pradipta</h4>
+          <div class="role">Project Lead</div>
+          <p class="muted">Memimpin integrasi praktik sustainability pada solusi pemantauan postur PosturGo.</p>
+          <div class="pill-row">
+            <span class="pill">Manajemen Proyek</span>
+            <span class="pill">Sustainability</span>
+            <span class="pill">Stakeholder</span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="avatar" src="https://randomuser.me/api/portraits/women/22.jpg" alt="Avatar">
+          <h4>Nadia Azzahra</h4>
+          <div class="role">Ergonomics Specialist</div>
+          <p class="muted">Menyusun modul pelatihan ergonomi hijau dan panduan penataan ruang kerja.</p>
+          <div class="pill-row">
+            <span class="pill">Ergonomi</span>
+            <span class="pill">Pelatihan</span>
+            <span class="pill">Occupational Health</span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="avatar" src="https://randomuser.me/api/portraits/men/31.jpg" alt="Avatar">
+          <h4>Dimas Wirawan</h4>
+          <div class="role">Data Engineer</div>
+          <p class="muted">Membangun pipeline data untuk dashboard dampak ergonomi dan lingkungan.</p>
+          <div class="pill-row">
+            <span class="pill">Data Pipeline</span>
+            <span class="pill">Dashboard</span>
+            <span class="pill">Analytics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <a href="index.html#home" class="footer-logo">
+            <img src="images/LogoPG copy.png" alt="PosturGo Logo"> PosturGo
+          </a>
+          <p>Solusi inovatif untuk pemantauan postur kerja yang lebih baik dan tempat kerja yang lebih sehat.</p>
+          <div class="footer-social">
+            <a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
+            <a href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+            <a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
+            <a href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Tautan Cepat</h4>
+          <ul>
+            <li><a href="index.html#home">Beranda</a></li>
+            <li><a href="index.html#about">Tentang</a></li>
+            <li><a href="index.html#features">Fitur</a></li>
+            <li><a href="index.html#solutions">Solusi</a></li>
+            <li><a href="index.html#team">Tim</a></li>
+            <li><a href="index.html#contact">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Layanan Kami</h4>
+          <ul>
+            <li><a href="javascript:void(0);">Analisis Postur</a></li>
+            <li><a href="javascript:void(0);">Pelatihan Ergonomi</a></li>
+            <li><a href="javascript:void(0);">Konsultasi K3</a></li>
+            <li><a href="javascript:void(0);">Integrasi Sistem</a></li>
+            <li><a href="javascript:void(0);">Dukungan 24/7</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Berlangganan</h4>
+          <p>Dapatkan pembaruan terbaru dan penawaran khusus langsung ke kotak masuk Anda.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" placeholder="Alamat Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2025</span> PosturGo. Seluruh hak cipta dilindungi.</p>
+        <div class="footer-legal">
+          <a href="javascript:void(0);">Kebijakan Privasi</a>
+          <a href="javascript:void(0);">Syarat & Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>
