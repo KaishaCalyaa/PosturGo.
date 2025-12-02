@@ -26,12 +26,16 @@
 
     .team-like { background: var(--gray-100); }
     .team-like .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
-    .team-like .card { background: var(--bg-light); border-radius: 12px; box-shadow: var(--shadow-md); padding: 1.5rem; text-align: center; transition: transform .3s ease, box-shadow .3s ease; }
+    .team-like .card { background: var(--bg-light); border-radius: 12px; box-shadow: var(--shadow-md); padding: 1.5rem; text-align: center; transition: transform .3s ease, box-shadow .3s ease; display: flex; flex-direction: column; height: 100%; }
     .team-like .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-    .team-like .avatar { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; box-shadow: var(--shadow-sm); }
+    .team-like .avatar { width: 116px; height: 116px; border-radius: 50%; object-fit: cover; object-position: top center; display: block; margin: 0 auto 1rem; box-shadow: var(--shadow-sm); }
     .team-like h4 { margin-top: .25rem; }
-    .role { color: var(--secondary-color); font-weight: 600; font-size: .95rem; }
+    .role { color: var(--secondary-color); font-weight: 600; font-size: .85rem; }
     .muted { color: var(--gray-400); font-size: .95rem; margin: .75rem 0 1rem; }
+
+    .card-actions { margin-top: auto; display: flex; justify-content: center; }
+    .insta-link { width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: var(--gray-100); border: 1px solid var(--gray-200); color: var(--secondary-color); }
+    .insta-link:hover { background: var(--secondary-color); color: #fff; }
 
     
 
@@ -57,6 +61,7 @@
           <li><a href="index.html#features" class="nav-link">Fitur</a></li>
           <li><a href="index.html#solutions" class="nav-link">Solusi</a></li>
           <li><a href="index.html#team" class="nav-link">Tim</a></li>
+          <li><a href="gallery.html" class="nav-link">Galeri</a></li>
           <li><a href="index.html#contact" class="nav-link btn btn-primary">Kontak Kami</a></li>
         </ul>
       </nav>
@@ -102,36 +107,48 @@
       </div>
       <div class="cards">
         <div class="card">
-          <img class="avatar" src="https://randomuser.me/api/portraits/men/15.jpg" alt="Avatar">
-          <h4>Raka Pradipta</h4>
+          <img class="avatar" src="images/revand.jpg" alt="Avatar">
+          <h4>Revand Jethro Setiawan</h4>
           <div class="role">Project Lead</div>
-          <p class="muted">Memimpin integrasi praktik sustainability pada solusi pemantauan postur PosturGo.</p>
-          <div class="pill-row">
-            <span class="pill">Manajemen Proyek</span>
-            <span class="pill">Sustainability</span>
-            <span class="pill">Stakeholder</span>
+          <p class="muted">Memimpin tim dan mengerjakan hardware serta pengembangan web app PosturGo.</p>
+          <div class="card-actions">
+            <a class="insta-link" href="https://www.instagram.com/m444hess?igsh=cTN5MmM4OHJienE0" target="_blank" rel="noopener" aria-label="Instagram Revand">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+
+        </div>
+        <div class="card">
+          <img class="avatar" src="images/mahes.jpg" alt="Avatar">
+          <h4>Maheswara Rizal Hafizh</h4>
+          <div class="role">Web App Developer</div>
+          <p class="muted">Mengembangkan hardware sensor dan pembuatan web app PosturGo.</p>
+          <div class="card-actions">
+            <a class="insta-link" href="https://www.instagram.com/kaiishacalya?igsh=MTRsdmg4MzY4OW5vNw==" target="_blank" rel="noopener" aria-label="Instagram Mahes">
+              <i class="fab fa-instagram"></i>
+            </a>
           </div>
         </div>
         <div class="card">
-          <img class="avatar" src="https://randomuser.me/api/portraits/women/22.jpg" alt="Avatar">
-          <h4>Nadia Azzahra</h4>
-          <div class="role">Ergonomics Specialist</div>
-          <p class="muted">Menyusun modul pelatihan ergonomi hijau dan panduan penataan ruang kerja.</p>
-          <div class="pill-row">
-            <span class="pill">Ergonomi</span>
-            <span class="pill">Pelatihan</span>
-            <span class="pill">Occupational Health</span>
+          <img class="avatar" src="images/kaisha.jpg" alt="Avatar">
+          <h4>Kaisha Calya Damayanti</h4>
+          <div class="role">Web Developer</div>
+          <p class="muted">Membuat dan mengembangkan website company profile PosturGo.</p>
+          <div class="card-actions">
+            <a class="insta-link" href="https://www.instagram.com/kaiishacalya?igsh=MTRsdmg4MzY4OW5vNw==" target="_blank" rel="noopener" aria-label="Instagram Kaisha">
+              <i class="fab fa-instagram"></i>
+            </a>
           </div>
         </div>
         <div class="card">
-          <img class="avatar" src="https://randomuser.me/api/portraits/men/31.jpg" alt="Avatar">
-          <h4>Dimas Wirawan</h4>
-          <div class="role">Data Engineer</div>
-          <p class="muted">Membangun pipeline data untuk dashboard dampak ergonomi dan lingkungan.</p>
-          <div class="pill-row">
-            <span class="pill">Data Pipeline</span>
-            <span class="pill">Dashboard</span>
-            <span class="pill">Analytics</span>
+          <img class="avatar" src="images/ocha.jpg" alt="Avatar">
+          <h4>Ocha Viantika Sari</h4>
+          <div class="role">Social Media Manager</div>
+          <p class="muted">Mengelola media sosial dan pembuatan website company profile.</p>
+          <div class="card-actions">
+            <a class="insta-link" href="https://www.instagram.com/ochvtc?igsh=eXZkbDBhNGZhNjEy" target="_blank" rel="noopener" aria-label="Instagram Ocha">
+              <i class="fab fa-instagram"></i>
+            </a>
           </div>
         </div>
       </div>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Proyek - PosturGo</title>
+  <meta name="description" content="Galeri dokumentasi pengerjaan proyek PosturGo.">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .sub-hero { background: linear-gradient(180deg, #f0f4f8, var(--bg-light)); padding: 7rem 0 3rem; }
+    .sub-hero h1 { font-size: 2.25rem; }
+    .sub-hero p { color: var(--gray-400); margin-top: .5rem; }
+
+    .gallery { background: var(--bg-light); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+    .gallery-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-md); transition: transform .2s ease, box-shadow .2s ease; }
+    .gallery-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .gallery-card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+    .gallery-caption { padding: .85rem 1rem; }
+    .gallery-caption h4 { font-size: 1rem; margin-bottom: .25rem; }
+    .gallery-caption p { color: var(--gray-400); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <div class="preloader"><div class="loader"></div></div>
+  <a href="#top" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html#home" class="logo">
+          <img src="ASSET/LogoPG.png" alt="PosturGo Logo"> PosturGo
+        </a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html#home" class="nav-link">Beranda</a></li>
+          <li><a href="index.html#about" class="nav-link">Tentang</a></li>
+          <li><a href="index.html#features" class="nav-link">Fitur</a></li>
+          <li><a href="index.html#solutions" class="nav-link">Solusi</a></li>
+          <li><a href="index.html#team" class="nav-link">Tim</a></li>
+          <li><a href="gallery.html" class="nav-link active">Galeri</a></li>
+          <li><a href="index.html#contact" class="nav-link btn btn-primary">Kontak Kami</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Dokumentasi</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="images/home2.jpg" alt="Perancangan antarmuka">
+          <div class="gallery-caption">
+            <h4>Perancangan Antarmuka</h4>
+            <p>Diskusi desain UI awal untuk web app PosturGo.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/visimisi.JPG" alt="Rapat kickoff">
+          <div class="gallery-caption">
+            <h4>Kickoff Project</h4>
+            <p>Pemaparan tujuan, ruang lingkup, dan timeline proyek.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/Perusahaan.JPG" alt="Uji coba perangkat">
+          <div class="gallery-caption">
+            <h4>Pengujian Perangkat</h4>
+            <p>Uji fungsionalitas hardware sensor di lingkungan kerja.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/kesehatan3.jpg" alt="Kalibrasi sensor">
+          <div class="gallery-caption">
+            <h4>Kalibrasi Sensor</h4>
+            <p>Kalibrasi awal untuk akurasi deteksi postur.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/pendidikan.jpg" alt="Sesi pelatihan pengguna">
+          <div class="gallery-caption">
+            <h4>Pelatihan Pengguna</h4>
+            <p>Pengenalan cara penggunaan sistem pada pengguna awal.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/jarakjauh.JPG" alt="Review sprint">
+          <div class="gallery-caption">
+            <h4>Review Sprint</h4>
+            <p>Evaluasi kemajuan dan rencana perbaikan iteratif.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <a href="index.html#home" class="footer-logo">
+            <img src="images/LogoPG copy.png" alt="PosturGo Logo"> PosturGo
+          </a>
+          <p>Solusi inovatif untuk pemantauan postur kerja yang lebih baik dan tempat kerja yang lebih sehat.</p>
+          <div class="footer-social">
+            <a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
+            <a href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+            <a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
+            <a href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Tautan Cepat</h4>
+          <ul>
+            <li><a href="index.html#home">Beranda</a></li>
+            <li><a href="index.html#about">Tentang</a></li>
+            <li><a href="index.html#features">Fitur</a></li>
+            <li><a href="index.html#solutions">Solusi</a></li>
+            <li><a href="index.html#team">Tim</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="index.html#contact">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Layanan Kami</h4>
+          <ul>
+            <li><a href="javascript:void(0);">Analisis Postur</a></li>
+            <li><a href="javascript:void(0);">Pelatihan Ergonomi</a></li>
+            <li><a href="javascript:void(0);">Konsultasi K3</a></li>
+            <li><a href="javascript:void(0);">Integrasi Sistem</a></li>
+            <li><a href="javascript:void(0);">Dukungan 24/7</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Berlangganan</h4>
+          <p>Dapatkan pembaruan terbaru dan penawaran khusus langsung ke kotak masuk Anda.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" placeholder="Alamat Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2025</span> PosturGo. Seluruh hak cipta dilindungi.</p>
+        <div class="footer-legal">
+          <a href="javascript:void(0);">Kebijakan Privasi</a>
+          <a href="javascript:void(0);">Syarat & Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>

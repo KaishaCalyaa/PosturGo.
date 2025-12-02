@@ -251,7 +251,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   z-index: 1000;
   transition: all 0.3s ease-in-out;
   background-color: transparent;
@@ -270,21 +270,23 @@ img {
 }
 
 .logo {
-   display: flex;
+  display: flex;
   align-items: center;
+  gap: 0.5rem;
+  line-height: 1;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
-  }
-  
+}
+
 .logo img {
-  height: 55px; /* Perbaikan: Tinggi logo ditingkatkan untuk tampilan yang lebih besar */
-  margin-right: 0.75rem;
+  height: 60px;
+  margin-right: 0;
 }
 
 .nav-menu {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
   align-items: center;
 }
 
